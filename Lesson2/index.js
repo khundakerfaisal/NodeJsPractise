@@ -1,4 +1,4 @@
-//----------FS Module 
+//----------Built In Module,http,url,path,fs In This Lesson We will work on FS Module ------------
     // writeFile();
     // readFile();
     // appendFile();
@@ -6,12 +6,12 @@
     // unlink()
     // Exist()
 
-    const fs=require('fs')
-
-    fs.writeFile('Name.txt',"This is my first fs",function(err){
+// ----------Write MODULE USE FOR write line in specific FILE ----------
+    const fs=require('fs');
+    fs.writeFile('demo2','This is new line',function(err){
         if(err){
-           console.log(err)
+            console.log(err)
         }else{
-            console.log('successfully')
+            console.log('success the file')
         }
     })
